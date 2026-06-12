@@ -1,0 +1,45 @@
+# Ignore everything by default. This repository is intended to publish only the
+# code needed to reproduce the experiments, not local data, generated results,
+# paper source, or model caches.
+*
+
+# Keep directories traversable for negated patterns below.
+!*/
+
+# Repository metadata and instructions.
+!.gitignore
+!README.md
+!requirements.txt
+!run.sh
+
+# Experiment scripts used by the UAI 2026 paper figures/tables.
+!synthetic_main_patched.py
+!realdata_alpha_exp.py
+!realdata_alpha_exp_table.py
+!realdata_rebuttal.py
+!realdata_rebuttal_v4.py
+!realdata_ablation.py
+!make_paper_tables_with_stderr.py
+!plot_group_boxplots.py
+!medmnist_train.py
+!prepare_imagenet_val_symlinks.py
+
+# Optional small checkpoint used by the PathMNIST reproduction commands.
+# Remove this exception if you prefer to train/download the checkpoint separately.
+!checkpoints/
+!checkpoints/path_cnn.pt
+
+# Always ignore transient Python/runtime files even under unignored directories.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Keep generated artifacts and large assets out of GitHub.
+data/
+results/
+figures/
+paper/
+model/
+.idea/
