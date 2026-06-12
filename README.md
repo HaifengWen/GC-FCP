@@ -4,15 +4,7 @@ This repository contains the code needed to reproduce the experiments for **Effi
 
 ## Setup
 
-Use Python 3.10 or newer.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Install the requirements.
+Use Python 3.10 or newer and install the requirements.
 
 ```powershell
 pip install -r requirements.txt
